@@ -19,7 +19,8 @@ class Videos extends Component {
         return ( 
         <Styles>
             <div className='zoom'>
-                <video width="360" height="280" 
+                <video 
+                width="240" height="201.38" 
                 src={this.props.vid} 
                 onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
                 loop>

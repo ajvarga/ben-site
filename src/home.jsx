@@ -13,7 +13,7 @@ class Home extends Component {
     render() { 
         return ( 
                 <div>
-                    <Banner header='Greetings' caption='I make music n stuff, Hi mom'/>
+                    {/* <Banner header='Greetings' caption='I make music n stuff, Hi mom'/> */}
                     {/* <div className='page-header'>
                         <h1 className='text-center'><s>Ben Visini<s></h1>
                     </div> */}
