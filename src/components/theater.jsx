@@ -1,73 +1,132 @@
 import React, { Component } from 'react';
+import cringe from '../assets/leord.png';
 
 
 import Videos from './videos';
-// import { Row } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 
 class Theater extends Component {
     state = {
      }
-    render() { 
+    render() {     
 
         return ( 
         <section class='animated-grid'>
             {/* <Row style={{display: 'flex', justifyContent:'center'}}> */}
 
-            <div class='card'>
-                a
-                {/* <Videos vid='neverGiveUp.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                b
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                c
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                d
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                e
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                f
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
             {/* </Row> */}
-
-
             {/* <Row style={{display: 'flex', justifyContent:'center'}}> */}
-            <div class='class'>
-                g
-                {/* <Videos vid='neverGiveUp.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                h
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                i
-                {/* <Videos vid='neverGiveUp.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                j
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                k
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                l
-                {/* <Videos vid='chief.mp4'/> */}
+            <div>
+                <video class='card'
+                width='100%'
+                height='100%'
+                src={'chief.mp4'} 
+                onMouseEnter={event => event.target.play()} onMouseLeave={event => event.target.pause()}
+                loop>
+                </video> 
             </div>
-            <div class='card'>
-                main
+            <div class='card' id='main'>
+                
             </div>
             {/* </Row> */}
 

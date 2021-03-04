@@ -1,28 +1,23 @@
-
-body{
-  background: pink;
-}
 .animated-grid {
-  height: 84vh;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  height: 85vh;
+  margin: 15px;
 
   display: grid;
   gap: 1rem;
 
   /* Explicit grid */
-  grid-template-areas: 
-  'a  b  c  d'
-  'l ⭐ ⭐ e'
-  'k ⭐ ⭐ f'
-  'j  i  h  g';
+  grid-template-areas:
+    'a  b  c  d'
+    'l  🌟 🌟 e'
+    'k  🌟 🌟 f'
+    'j  i  h  g';
 
   grid-template-rows: repeat(4, 25%);
   grid-template-columns: 240px auto auto 240px;
 
   --stagger-delay: 100ms;
 }
+
 @keyframes cardEntrance {
   from {
     opacity: 0;
@@ -35,61 +30,76 @@ body{
     filter: hue-rotate(0deg);
   }
 }
+
 .card {
-  background-color: rgb(36, 243, 147);
+  background-color: rgb(30, 177, 108);
   animation: cardEntrance 700ms ease-out;
   animation-fill-mode: backwards;
+
+  padding:15px;
+  transition: .2s;
+  z-index: 1;
+}
+.card:hover{
+  transform: scale(1.2);
+  z-index: 2;
 }
 
-.card:nth-child(1){
+.card:nth-child(1) {
   grid-area: a;
   animation-delay: calc(1 * var(--stagger-delay));
 }
-.card:nth-child(2){
+.card:nth-child(2) {
   grid-area: b;
   animation-delay: calc(2 * var(--stagger-delay));
 }
-.card:nth-child(3){
+.card:nth-child(3) {
   grid-area: c;
   animation-delay: calc(3 * var(--stagger-delay));
 }
-.card:nth-child(4){
+.card:nth-child(4) {
   grid-area: d;
   animation-delay: calc(4 * var(--stagger-delay));
 }
-.card:nth-child(5){
+.card:nth-child(5) {
   grid-area: e;
   animation-delay: calc(5 * var(--stagger-delay));
 }
-.card:nth-child(6){
+.card:nth-child(6) {
   grid-area: f;
   animation-delay: calc(6 * var(--stagger-delay));
 }
-.card:nth-child(7){
+.card:nth-child(7) {
   grid-area: g;
   animation-delay: calc(7 * var(--stagger-delay));
 }
-.card:nth-child(8){
+.card:nth-child(8) {
   grid-area: h;
   animation-delay: calc(8 * var(--stagger-delay));
 }
-.card:nth-child(9){
+.card:nth-child(9) {
   grid-area: i;
   animation-delay: calc(9 * var(--stagger-delay));
 }
-.card:nth-child(10){
+.card:nth-child(10) {
   grid-area: j;
   animation-delay: calc(10 * var(--stagger-delay));
 }
-.card:nth-child(11){
+.card:nth-child(11) {
   grid-area: k;
   animation-delay: calc(11 * var(--stagger-delay));
 }
-.card:nth-child(12){
+.card:nth-child(12) {
   grid-area: l;
   animation-delay: calc(12 * var(--stagger-delay));
 }
-.card:nth-child(13){
-  grid-area: ⭐;
+.card:last-child {
+  grid-area: 🌟;
   animation-delay: calc(13 * var(--stagger-delay));
+}
+
+#main {
+  background: url('./assets/marioSonic.gif');
+  background-size: cover;
+  overflow: hidden;
 }
