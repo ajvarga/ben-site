@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar} from 'react-bootstrap';
 import styled from 'styled-components';
+import logo from '../assets/benHead.png';
 
 
 const Styles = styled.div`
@@ -25,7 +26,8 @@ class NavigationBar extends Component {
             <Styles>
                 <Navbar expand='lg'>
                     <Navbar.Brand href='/'>
-                        Ben Visini
+                        <img src={ logo } width='40' height='50'></img>
+                          Ben Visini Music
                         </Navbar.Brand>
                     <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                     <Navbar.Collapse id='basic-navbar-nav'>
