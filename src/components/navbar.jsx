@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar} from 'react-bootstrap';
 import styled from 'styled-components';
+import logo from '../assets/benHead.png';
 
 
 const Styles = styled.div`
@@ -25,12 +26,13 @@ class NavigationBar extends Component {
             <Styles>
                 <Navbar expand='lg'>
                     <Navbar.Brand href='/'>
-                        Ben Visini
+                        <img src={ logo } width='40' height='50'></img>
+                          Ben Visini Music
                         </Navbar.Brand>
                     <Navbar.Toggle aria-controls='basic-navbar-nav'/>
                     <Navbar.Collapse id='basic-navbar-nav'>
                         <Nav className='ml-auto'>
-                            <Nav.Item>
+                            {/* <Nav.Item>
                                 <Nav.Link href='/music'>Music</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
@@ -41,7 +43,7 @@ class NavigationBar extends Component {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href='/events'>Events</Nav.Link>
-                            </Nav.Item>
+                            </Nav.Item> */}
                             <Nav.Item>
                                 <Nav.Link href='/about'>About</Nav.Link>
                             </Nav.Item>
